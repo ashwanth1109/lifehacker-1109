@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bundle": "webpack",
+    "serve": "yarn build && firebase serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
@@ -39,9 +40,10 @@
     "webpack-dev-server": "3.1.14"
   },
   "dependencies": {
-    "@types/react": "16.7.22",
-    "@types/react-dom": "16.0.11",
-    "react": "16.7.0",
-    "react-dom": "16.7.0"
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.9.0",
+    "react-client-dimensions": "^1.0.4",
+    "react-dom": "^16.9.0"
   }
 }
